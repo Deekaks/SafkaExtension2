@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "SafkaExtension",
+    "version": "1.0.1",
+    "description": "Ruokalista TAI Juhannuskukkulan safka ravintolasta liitettynä esim. wilman sivuille.",
+    "content_scripts": [
+        {
+            "js": [
+                "safkaext.js"
+            ],
+            "matches": [
+                "https://turku.inschool.fi/*"
+            ]
+        },
+        {
+            "css": [
+                "safkaext.css"
+            ],
+            "matches": [
+                "https://turku.inschool.fi/*"
+            ]
+        }
+    ],
+    "author": ""
+}
