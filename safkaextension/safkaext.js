@@ -7,6 +7,7 @@ var sisalto = document.createElement("div");
     sisalto.innerHTML="";
     sisalto.id="sisalto";
 
+
 var logo = document.createElement("div");
     logo.innerHTML="<a href='https://safka.online/'>Safka.<br>Online</a>";
     logo.id="safkalogo";
@@ -15,10 +16,7 @@ var text = document.createElement("div");
     text.innerHTML="Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
 const footer = document.querySelector('footer.margin-top-bottom');
 
-var favicon = document.createElement("img");
-    favicon.src="https://safka.online/favicon.png"
-
-document.querySelector("#qrcode-popover > span").replaceWith(favicon)
+document.querySelector("#qrcode-popover > span").replaceWith("https://safka.online/favicon28px.png")
 
 if (footer) {
     document.querySelector('body > footer > img').replaceWith(kontti)
@@ -31,9 +29,8 @@ if (footer) {
             var day = document.createElement("div")
             day.className="day"
             day.innerHTML=`<h1>${days[i]}</h1><p>${ruoka}</p>`
-            day.style.marginLeft = i + 3 + "%"; 
+            day.style.marginLeft = i + 30 + "px"; 
             document.querySelector("#sisalto").appendChild(day)
         }
     })
 };
-

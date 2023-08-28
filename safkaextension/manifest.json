@@ -21,5 +21,9 @@
             ]
         }
     ],
-    "author": ""
+    "icons": {
+        "48": "favicon48px.png",
+        "128": "favicon128px.png"
+      }
+
 }
